@@ -3,6 +3,9 @@
 [![License](https://img.shields.io/badge/License-Apache_2.0-yellowgreen.svg)](https://opensource.org/licenses/Apache-2.0)
 
 Flutter plugin for interacting with the native library of the chums proxy service.
+
+The source files of the native library can be found [here](https://github.com/Chums-Team/chums-proxy)
+
 The proxy launch on port 3000 at 127.0.0.1 
 
 ## Installing
