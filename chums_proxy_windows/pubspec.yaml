@@ -1,0 +1,32 @@
+name: chums_proxy_windows
+description: "Windows implementation of Chums Proxy flutter plugin"
+version: 0.0.1
+publish_to: none
+
+environment:
+  sdk: ^3.7.0
+  flutter: '>=3.3.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.0.2
+  chums_proxy:
+    path: ../chums_proxy
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+  plugin:
+    platforms:
+      windows:
+        pluginClass: ChumsProxyPluginCApi
+        dartPluginClass: ChumsProxyWindows
+

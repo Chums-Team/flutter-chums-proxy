@@ -1,0 +1,40 @@
+name: chums_proxy
+description: "Chums Proxy flutter plugin."
+version: 0.0.1
+publish_to: none
+
+environment:
+  sdk: ^3.7.0
+  flutter: '>=3.3.0'
+
+  # The following section is specific to Flutter packages.
+flutter:
+  plugin:
+    platforms:
+      android:
+        default_package: chums_proxy_android
+      ios:
+        default_package: chums_proxy_ios
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.0.2
+  path_provider: ^2.1.5
+  ffi: ^2.1.4
+  device_info_plus: ^11.3.3
+  chums_proxy_android:
+    path: ../chums_proxy_android
+  chums_proxy_ios:
+    path: ../chums_proxy_ios
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+
+
