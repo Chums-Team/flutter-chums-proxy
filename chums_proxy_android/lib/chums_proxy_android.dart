@@ -28,7 +28,7 @@ class ChumsProxyAndroid extends ChumsProxyPlatform {
   Future<void> initDyLib() async {
     AndroidDeviceInfo androidInfo = await deviceInfo.androidInfo;
     if(androidInfo.supportedAbis.contains('arm64-v8a')) {
-      dyLib = ffi.DynamicLibrary.open('libevername_proxy.so');
+      dyLib = ffi.DynamicLibrary.open('libchums_proxy.so');
     } else {
       debugPrint('[Proxy]: Unsupported Android architecture: ${androidInfo.supportedAbis}');
     }

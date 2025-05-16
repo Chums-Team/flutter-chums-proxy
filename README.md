@@ -21,8 +21,8 @@ it is enough to add a plugin depending on the main application `pubspec.yaml`.
 in addition to adding a plugin depending on the main application,
 you need to connect XCFramework with the library on XCode project
 
-The XC Framework is located in `./chums_proxy_ios/ios/Frameworks/libevernameproxy.xcframework`
-You need to copy the folder "libevernameproxy.xcframework"
+The XC Framework is located in `./chums_proxy_ios/ios/Frameworks/libchums_proxy.xcframework`
+You need to copy the folder "libchums_proxy.xcframework"
 in the main application to the `/ios/Frameworks` directory
 
 The structure of your application may look like this:
@@ -33,8 +33,8 @@ You can connect the framework to xcode as follows:
 
 * Go to the "Frameworks, Libraries, and Embedded Content" section, click "+" and select the framework (find it in the navigator) that was previously added to your project in the ios/Frameworks directory. ![Screen 1](./1.png)
 * Check that the Embed value is set in "Embed & Sign"
-* In the "Build Phases" section, check that the "Embed frameworks" block is located above the "Thin Binary" block and contains the added libevernameproxy.xcframework ![Screen 2](./2.png)
-* In the "Build Phases" section, in the "Link Binary With Libraries" block, the "Status" value for libevernameproxy.xcframework set to "Optional" ![Screen 3](./3.png)
+* In the "Build Phases" section, check that the "Embed frameworks" block is located above the "Thin Binary" block and contains the added libchums_proxy.xcframework ![Screen 2](./2.png)
+* In the "Build Phases" section, in the "Link Binary With Libraries" block, the "Status" value for libchums_proxy.xcframework set to "Optional" ![Screen 3](./3.png)
 
 ### Application usage example:
 
