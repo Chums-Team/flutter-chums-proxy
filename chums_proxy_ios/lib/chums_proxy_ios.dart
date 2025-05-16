@@ -32,9 +32,9 @@ class ChumsProxyIos extends ChumsProxyPlatform {
   Future<void> initDyLib() async {
     debugPrint('[Proxy] Load library framework on IOS');
     try {
-      dyLib = ffi.DynamicLibrary.open('libevernameproxy.framework/libevernameproxy');
+      dyLib = ffi.DynamicLibrary.open('libchums_proxy.framework/libchums_proxy');
     } on Object catch(e, stackTrace) {
-      debugPrint('[Proxy] open library (libevernameproxy) on IOS error: $e');
+      debugPrint('[Proxy] open library (libchums_proxy) on IOS error: $e');
       dyLib = ffi.DynamicLibrary.process();
     }
 
